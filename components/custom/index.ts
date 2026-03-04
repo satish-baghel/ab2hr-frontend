@@ -12,3 +12,4 @@ export {
   SheetTitle,
   SheetDescription,
 } from "./sheet"
+export { ToggleGroup, ToggleGroupItem } from "./toggle-group"

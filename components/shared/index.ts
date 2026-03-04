@@ -1,3 +1,6 @@
 export { ThemeProvider } from "./ThemeProvider"
 export { ThemeToggle } from "./ThemeToggle"
 export { HeroIllustration } from "./HeroIllustration"
+export { RoadmapIllustration } from "./RoadmapIllustration"
+export { ErrorIllustration } from "./ErrorIllustration"
+export { Logo } from "./Logo"

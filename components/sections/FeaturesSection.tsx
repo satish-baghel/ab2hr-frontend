@@ -44,7 +44,7 @@ const MotionCard = motion.create(Card)
 
 export const FeaturesSection = () => {
   return (
-    <section className="relative bg-accent/40 py-20 md:py-28">
+    <section className="relative bg-accent/60 py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         {/* Section header */}
         <motion.div
@@ -56,7 +56,7 @@ export const FeaturesSection = () => {
         >
           <Badge
             variant="outline"
-            className="mb-4 border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
+            className="mb-4 border-primary/20 bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
           >
             {featuresData.badge}
           </Badge>
@@ -97,8 +97,8 @@ export const FeaturesSection = () => {
                   <div
                     className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg ${
                       feature.highlighted
-                        ? "bg-primary text-primary-foreground"
-                        : "bg-primary/10 text-primary"
+                        ? "bg-secondary text-secondary-foreground"
+                        : "bg-accent text-primary"
                     }`}
                   >
                     {Icon && <Icon className="h-5 w-5" />}

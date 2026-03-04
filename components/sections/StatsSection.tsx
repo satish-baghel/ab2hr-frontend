@@ -22,10 +22,10 @@ const statVariants = {
 
 export const StatsSection = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary to-primary/85 py-20 text-primary-foreground md:py-24">
-      {/* Subtle pattern overlay */}
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[#2E1065] py-20 text-primary-foreground md:py-24">
+      {/* Premium overlay accents */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-20 left-1/4 h-[350px] w-[350px] rounded-full bg-secondary/10 blur-3xl" />
+        <div className="absolute -top-20 left-1/4 h-[350px] w-[350px] rounded-full bg-secondary/[0.08] blur-3xl" />
         <div className="absolute -bottom-20 right-1/4 h-[300px] w-[300px] rounded-full bg-primary-foreground/5 blur-3xl" />
       </div>
 
@@ -60,7 +60,7 @@ export const StatsSection = () => {
               variants={statVariants}
               className="text-center"
             >
-              <p className="mb-1 text-4xl font-extrabold tracking-tight md:text-5xl">
+              <p className="mb-1 text-4xl font-extrabold tracking-tight text-secondary md:text-5xl">
                 {stat.value}
               </p>
               <p className="text-sm font-medium text-primary-foreground/70">

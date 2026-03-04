@@ -1,7 +1,19 @@
 export const heroData = {
-  badge: "HR Management Platform",
-  heading: "Empower Your Workforce, Simplify HR",
+  badge: "Premium All-in-One HRMS Platform",
+  heading: "Run Your Entire People Operations from One Intelligent Workspace",
+  subheadingPrefix: "One premium solution for",
+  rotatingFeatures: [
+    "smart leave management",
+    "automated payroll",
+    "real-time attendance",
+    "seamless onboarding",
+    "built-in compliance",
+  ],
+  rotationIntervalMs: 2500,
+  typingSpeedMs: 55,
+  deletingSpeedMs: 35,
+  pauseAfterTypeMs: 900,
   description:
-    "Streamline hiring, payroll, attendance, and employee management — all from one intuitive dashboard. AB2HR helps teams focus on people, not paperwork.",
-  cta: "Get in Touch",
+    "From hiring and onboarding to payroll, attendance, performance, and compliance, AB2HR gives HR, managers, and employees a single source of truth.",
+  cta: "Book a Personalized Demo",
 } as const

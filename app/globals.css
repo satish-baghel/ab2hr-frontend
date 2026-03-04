@@ -48,148 +48,148 @@
 }
 
 /*
- * Theme Color Reference (easy to change):
+ * Premium Theme — Deep Violet + Gold
  *
- * LIGHT MODE                        DARK MODE
- * ─────────────────────────────────  ─────────────────────────────────
- * Primary:    violet-800 (#5B21B6)   Primary:    violet-500 (#8B5CF6)
- * Secondary:  teal-500   (#14B8A6)   Secondary:  teal-400   (#2DD4BF)
- * Accent:     violet-100 (#EDE9FE)   Accent:     violet-950 (#2E1065)
- * Background: slate-100  (#F1F5F9)   Background: slate-950  (#020617)
+ * LIGHT MODE                          DARK MODE
+ * ──────────────────────────────────   ──────────────────────────────────
+ * Primary:    violet-900 (#4C1D95)    Primary:    violet-600 (#7C3AED)
+ * Secondary:  amber-600  (#D97706)    Secondary:  amber-500  (#F59E0B)
+ * Accent:     violet-100 (#EDE9FE)    Accent:     indigo-950 (#1E1B4B)
+ * Background: custom     (#F8F7FC)    Background: zinc-950   (#09090B)
+ * Neutrals:   violet-tinted           Neutrals:   zinc-based
  *
- * To change theme: update the oklch values below.
- * Convert hex → oklch at https://oklch.com
+ * To change theme: update the hex values below.
  */
 
 :root {
   --radius: 0.625rem;
-  /* slate-100 */
-  --background: #F1F5F9;
-  /* slate-900 */
-  --foreground: #0F172A;
-  /* white */
+  /* violet-tinted off-white — branded, not generic */
+  --background: #F8F7FC;
+  /* indigo-950 — rich near-black with violet warmth */
+  --foreground: #1E1B4B;
+  /* white — pops against tinted bg */
   --card: #FFFFFF;
-  /* slate-900 */
-  --card-foreground: #0F172A;
+  /* indigo-950 */
+  --card-foreground: #1E1B4B;
   /* white */
   --popover: #FFFFFF;
-  /* slate-900 */
-  --popover-foreground: #0F172A;
-  /* violet-800 (#5B21B6) */
-  --primary: #5B21B6;
+  /* indigo-950 */
+  --popover-foreground: #1E1B4B;
+  /* violet-900 — deep royal purple */
+  --primary: #4C1D95;
   /* white */
   --primary-foreground: #FFFFFF;
-  /* teal-500 (#14B8A6) */
-  --secondary: #14B8A6;
+  /* amber-600 — warm premium gold */
+  --secondary: #D97706;
   /* white */
   --secondary-foreground: #FFFFFF;
-  /* slate-200 */
-  --muted: #E2E8F0;
-  /* slate-500 */
-  --muted-foreground: #64748B;
-  /* violet-100 (#EDE9FE) */
+  /* violet-tinted gray — soft, on-brand */
+  --muted: #EEEDF5;
+  /* muted purple-gray */
+  --muted-foreground: #6E6887;
+  /* violet-100 — visible lavender wash */
   --accent: #EDE9FE;
-  /* violet-800 */
-  --accent-foreground: #5B21B6;
-  /* red-500 */
-  --destructive: #EF4444;
-  /* slate-200 */
-  --border: #E2E8F0;
-  /* slate-200 */
-  --input: #E2E8F0;
-  /* violet-800 */
-  --ring: #5B21B6;
-  /* violet-600 */
-  --chart-1: #7C3AED;
-  /* teal-500 */
-  --chart-2: #14B8A6;
+  /* violet-900 */
+  --accent-foreground: #4C1D95;
+  /* red-600 */
+  --destructive: #DC2626;
+  /* violet-tinted border */
+  --border: #E4E2EE;
+  /* violet-tinted input border */
+  --input: #E4E2EE;
+  /* violet-600 — focus ring */
+  --ring: #7C3AED;
+  /* violet-700 */
+  --chart-1: #6D28D9;
+  /* amber-500 */
+  --chart-2: #F59E0B;
   /* violet-400 */
   --chart-3: #A78BFA;
-  /* teal-300 */
-  --chart-4: #5EEAD4;
+  /* amber-400 */
+  --chart-4: #FBBF24;
   /* violet-300 */
   --chart-5: #C4B5FD;
-  /* slate-50 */
-  --sidebar: #F8FAFC;
-  /* slate-900 */
-  --sidebar-foreground: #0F172A;
-  /* violet-800 */
-  --sidebar-primary: #5B21B6;
+  /* match bg */
+  --sidebar: #F8F7FC;
+  /* indigo-950 */
+  --sidebar-foreground: #1E1B4B;
+  /* violet-900 */
+  --sidebar-primary: #4C1D95;
   /* white */
   --sidebar-primary-foreground: #FFFFFF;
   /* violet-100 */
   --sidebar-accent: #EDE9FE;
-  /* violet-800 */
-  --sidebar-accent-foreground: #5B21B6;
-  /* slate-200 */
-  --sidebar-border: #E2E8F0;
-  /* violet-800 */
-  --sidebar-ring: #5B21B6;
+  /* violet-900 */
+  --sidebar-accent-foreground: #4C1D95;
+  /* violet-tinted border */
+  --sidebar-border: #E4E2EE;
+  /* violet-600 */
+  --sidebar-ring: #7C3AED;
 }
 
 .dark {
-  /* slate-950 */
-  --background: #020617;
-  /* slate-50 */
-  --foreground: #F8FAFC;
-  /* slate-900 */
-  --card: #0F172A;
-  /* slate-50 */
-  --card-foreground: #F8FAFC;
-  /* slate-900 */
-  --popover: #0F172A;
-  /* slate-50 */
-  --popover-foreground: #F8FAFC;
-  /* violet-500 (#8B5CF6) */
-  --primary: #8B5CF6;
+  /* zinc-950 — true dark */
+  --background: #09090B;
+  /* zinc-50 */
+  --foreground: #FAFAFA;
+  /* zinc-900 — elevated surface */
+  --card: #18181B;
+  /* zinc-50 */
+  --card-foreground: #FAFAFA;
+  /* zinc-900 */
+  --popover: #18181B;
+  /* zinc-50 */
+  --popover-foreground: #FAFAFA;
+  /* violet-600 — luminous on dark */
+  --primary: #7C3AED;
   /* white */
   --primary-foreground: #FFFFFF;
-  /* teal-400 (#2DD4BF) */
-  --secondary: #2DD4BF;
-  /* slate-950 */
-  --secondary-foreground: #020617;
-  /* slate-800 */
-  --muted: #1E293B;
-  /* slate-400 */
-  --muted-foreground: #94A3B8;
-  /* violet-950 (#2E1065) */
-  --accent: #2E1065;
-  /* violet-100 */
-  --accent-foreground: #EDE9FE;
+  /* amber-500 — vibrant gold */
+  --secondary: #F59E0B;
+  /* zinc-950 */
+  --secondary-foreground: #09090B;
+  /* zinc-800 */
+  --muted: #27272A;
+  /* zinc-400 */
+  --muted-foreground: #A1A1AA;
+  /* indigo-950 — deep violet-black */
+  --accent: #1E1B4B;
+  /* violet-200 */
+  --accent-foreground: #DDD6FE;
   /* red-400 */
   --destructive: #F87171;
-  /* slate-700/50 */
-  --border: rgba(255, 255, 255, 0.1);
-  /* slate-700/60 */
-  --input: rgba(255, 255, 255, 0.15);
-  /* violet-500 */
-  --ring: #8B5CF6;
+  /* white 8% — subtle */
+  --border: rgba(255, 255, 255, 0.08);
+  /* white 12% */
+  --input: rgba(255, 255, 255, 0.12);
+  /* violet-600 */
+  --ring: #7C3AED;
   /* violet-400 */
   --chart-1: #A78BFA;
-  /* teal-400 */
-  --chart-2: #2DD4BF;
+  /* amber-400 */
+  --chart-2: #FBBF24;
   /* violet-300 */
   --chart-3: #C4B5FD;
-  /* teal-300 */
-  --chart-4: #5EEAD4;
+  /* amber-300 */
+  --chart-4: #FCD34D;
   /* violet-200 */
   --chart-5: #DDD6FE;
-  /* slate-900 */
-  --sidebar: #0F172A;
-  /* slate-50 */
-  --sidebar-foreground: #F8FAFC;
-  /* violet-500 */
-  --sidebar-primary: #8B5CF6;
+  /* zinc-900 */
+  --sidebar: #18181B;
+  /* zinc-50 */
+  --sidebar-foreground: #FAFAFA;
+  /* violet-600 */
+  --sidebar-primary: #7C3AED;
   /* white */
   --sidebar-primary-foreground: #FFFFFF;
-  /* violet-950 */
-  --sidebar-accent: #2E1065;
-  /* slate-50 */
-  --sidebar-accent-foreground: #F8FAFC;
-  /* white/10 */
-  --sidebar-border: rgba(255, 255, 255, 0.1);
-  /* violet-500 */
-  --sidebar-ring: #8B5CF6;
+  /* indigo-950 */
+  --sidebar-accent: #1E1B4B;
+  /* zinc-50 */
+  --sidebar-accent-foreground: #FAFAFA;
+  /* white 8% */
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  /* violet-600 */
+  --sidebar-ring: #7C3AED;
 }
 
 @layer base {

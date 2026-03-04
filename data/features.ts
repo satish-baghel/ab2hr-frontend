@@ -1,47 +1,47 @@
 import type { Feature } from "@/types"
 
 export const featuresData = {
-  badge: "Why AB2HR?",
-  heading: "Everything You Need to Run HR — In One Place",
+  badge: "Platform Capabilities",
+  heading: "Built for End-to-End HR, Payroll, and Employee Experience",
   description:
-    "From onboarding to offboarding, AB2HR handles the entire employee lifecycle so your team can focus on what matters most — your people.",
+    "Standardize your processes, automate repetitive tasks, and give every stakeholder the visibility they need across the complete employee lifecycle.",
   features: [
     {
       icon: "Database",
-      title: "Dedicated Database per Company",
+      title: "Single-Tenant Data Architecture",
       description:
-        "Every company gets its own isolated database. Your data never mixes with anyone else's — ensuring maximum security, privacy, and performance at scale.",
+        "Your account runs on an isolated database, helping you meet internal security standards and maintain strict data boundaries as you scale.",
       highlighted: true,
     },
     {
       icon: "BadgeIndianRupee",
-      title: "Payroll & Compliance",
+      title: "Payroll and Statutory Compliance",
       description:
-        "Run accurate payroll in minutes with automated tax calculations, statutory compliance, and one-click payslip generation.",
+        "Automate salary processing, tax rules, reimbursements, and statutory filings with configurable policies that match your organization.",
     },
     {
       icon: "CalendarCheck",
-      title: "Leave & Attendance",
+      title: "Time, Attendance, and Leave",
       description:
-        "Track attendance, manage leave policies, and handle shift schedules with a powerful yet easy-to-use system.",
+        "Track shifts, attendance, overtime, and leave balances in real time with policy controls for multiple teams and locations.",
     },
     {
       icon: "UserCheck",
-      title: "Hiring & Onboarding",
+      title: "Hiring and Structured Onboarding",
       description:
-        "Post jobs, track applicants, schedule interviews, and onboard new hires — all from a single pipeline.",
+        "Move candidates from application to offer and onboarding with clear workflows, task checklists, and role-based responsibilities.",
     },
     {
       icon: "Smartphone",
-      title: "Employee Self-Service",
+      title: "Employee and Manager Self-Service",
       description:
-        "Empower employees to access payslips, apply for leave, submit claims, and update profiles on any device.",
+        "Let employees handle leave, claims, documents, and profile updates while managers approve requests and track team activity from one portal.",
     },
     {
       icon: "BarChart3",
-      title: "Reports & Analytics",
+      title: "Actionable Reports and Analytics",
       description:
-        "150+ prebuilt reports covering HR, payroll, attendance, and workforce analytics to drive smarter decisions.",
+        "Use prebuilt and custom reports across attrition, payroll cost, headcount, attendance trends, and compliance readiness.",
     },
   ] satisfies Feature[],
 } as const

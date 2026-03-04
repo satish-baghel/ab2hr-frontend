@@ -1,5 +1,8 @@
 export { HeroSection } from "./HeroSection"
 export { FeaturesSection } from "./FeaturesSection"
 export { ProblemsSection } from "./ProblemsSection"
+export { RoadmapSection } from "./RoadmapSection"
+export { PlansSection } from "./PlansSection"
 export { StatsSection } from "./StatsSection"
+export { ComparisonSection } from "./ComparisonSection"
 export { CTASection } from "./CTASection"

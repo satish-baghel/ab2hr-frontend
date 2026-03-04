@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from "motion/react"
+import { useEffect, useState } from "react"
+import { motion, AnimatePresence } from "motion/react"
 import { ArrowRight } from "lucide-react"
 
 import { Badge, Button } from "@/components/custom"
@@ -34,15 +35,30 @@ const slideInRight = {
 }
 
 export const HeroSection = () => {
+  const [featureIndex, setFeatureIndex] = useState(0)
+
+  const rotatingFeatures = heroData.rotatingFeatures
+
+  useEffect(() => {
+    if (!rotatingFeatures?.length) return
+
+    const interval = setInterval(() => {
+      setFeatureIndex((prev) => (prev + 1) % rotatingFeatures.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [rotatingFeatures?.length])
+
   return (
-    <section className="relative overflow-hidden">
-      {/* Subtle gradient background accents */}
+    <section className="relative overflow-hidden bg-gradient-to-b from-accent/60 to-transparent">
+      {/* Premium gradient background accents */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute -top-24 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute -bottom-32 -right-32 h-[400px] w-[400px] rounded-full bg-secondary/5 blur-3xl" />
+        <div className="absolute -top-24 left-1/2 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-primary/[0.06] blur-3xl" />
+        <div className="absolute -bottom-32 -right-32 h-[400px] w-[400px] rounded-full bg-secondary/[0.07] blur-3xl" />
+        <div className="absolute top-1/4 -left-40 h-[350px] w-[350px] rounded-full bg-accent blur-3xl" />
       </div>
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 px-4 py-20 md:flex-row md:gap-16 md:px-6 md:py-28 lg:py-32">
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-12 px-4 py-20 md:flex-row md:gap-16 md:px-6 md:py-28 lg:py-32">
         {/* Left column — text content */}
         <motion.div
           className="flex flex-1 flex-col items-center text-center md:items-start md:text-left"
@@ -53,7 +69,7 @@ export const HeroSection = () => {
           <motion.div variants={slideInLeft}>
             <Badge
               variant="outline"
-              className="mb-4 border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
+              className="mb-4 border-primary/20 bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
             >
               {heroData.badge}
             </Badge>
@@ -65,6 +81,38 @@ export const HeroSection = () => {
           >
             {heroData.heading}
           </motion.h1>
+
+          <motion.p
+            variants={slideInLeft}
+            className="mb-5 max-w-xl rounded-xl border border-primary/15 bg-background/60 px-4 py-3 text-base font-medium shadow-[0_8px_28px_-18px_hsl(var(--primary))] backdrop-blur-sm md:text-lg"
+          >
+            <span className="text-foreground/85">{heroData.subheadingPrefix} </span>
+            <span className="relative inline-flex flex-col items-center">
+              <span className="inline-grid min-w-[18ch] justify-items-start align-baseline">
+                <AnimatePresence>
+                  <motion.span
+                    key={featureIndex}
+                    initial={{ y: 15, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -15, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    aria-live="polite"
+                    aria-atomic="true"
+                    className="col-start-1 row-start-1 bg-gradient-to-r from-primary via-foreground to-secondary bg-clip-text font-semibold text-transparent"
+                  >
+                    {rotatingFeatures[featureIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
+              <motion.span
+                key={`progress-${featureIndex}`}
+                initial={{ width: "0%" }}
+                animate={{ width: "100%" }}
+                transition={{ duration: 3, ease: "linear" }}
+                className="absolute -bottom-1 left-0 h-[2px] rounded-full bg-primary/40"
+              />
+            </span>
+          </motion.p>
 
           <motion.p
             variants={slideInLeft}

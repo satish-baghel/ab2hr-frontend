@@ -1,7 +1,7 @@
 export const ctaData = {
-  heading: "Ready to Simplify Your HR?",
+  heading: "Ready to Upgrade Your HR Operations?",
   description:
-    "Join forward-thinking companies that trust AB2HR to manage their most valuable asset — their people. Get started with a free account today.",
-  primaryCta: "Start Free Trial",
-  secondaryCta: "Book a Demo",
+    "See how AB2HR can streamline your hiring, payroll, attendance, and compliance workflows with a rollout plan tailored to your organization.",
+  primaryCta: "Request a Demo",
+  secondaryCta: "Talk to Product Expert",
 } as const

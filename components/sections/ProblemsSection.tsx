@@ -53,7 +53,7 @@ export const ProblemsSection = () => {
         >
           <Badge
             variant="outline"
-            className="mb-4 border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
+            className="mb-4 border-primary/20 bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary"
           >
             {problemsData.badge}
           </Badge>

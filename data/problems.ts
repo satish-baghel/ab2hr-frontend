@@ -1,34 +1,34 @@
 import type { Problem } from "@/types"
 
 export const problemsData = {
-  badge: "Sound Familiar?",
-  heading: "Modern HR Is Complex. AB2HR Makes It Simple.",
+  badge: "Common HR Bottlenecks",
+  heading: "Replace Fragmented HR Workflows with a Unified System",
   description:
-    "Most companies struggle with fragmented tools and manual processes. AB2HR replaces the chaos with one unified platform.",
+    "As teams grow, spreadsheets and disconnected tools create delays, errors, and compliance risk. AB2HR brings every process into one connected platform.",
   problems: [
     {
       icon: "SheetIcon",
-      problem: "Running HR on spreadsheets and scattered tools",
+      problem: "Employee data lives across spreadsheets, emails, and separate tools",
       solution:
-        "One single app for all HR and payroll processes — workforce management, employee relations, leave, and attendance.",
+        "Centralize employee lifecycle data in one HRMS so every team works from consistent, real-time records.",
     },
     {
       icon: "Clock",
-      problem: "Payroll takes hours of manual work every month",
+      problem: "Payroll cycles consume too much manual effort each month",
       solution:
-        "Automate complex payroll policies, remove manual errors, and ensure faster, accurate payouts every cycle.",
+        "Configure payroll rules once and automate recurring calculations, approvals, and payslip delivery with fewer errors.",
     },
     {
       icon: "FileWarning",
-      problem: "No proper system to track leaves and attendance",
+      problem: "Leave and attendance tracking is inconsistent across teams",
       solution:
-        "Best-in-category leave and attendance management with policy customization, shift scheduling, and real-time tracking.",
+        "Apply policy-driven attendance, shift, and leave workflows to improve accuracy and reduce back-and-forth communication.",
     },
     {
       icon: "ShieldAlert",
-      problem: "Worried about data security and privacy",
+      problem: "Security, privacy, and compliance are difficult to enforce at scale",
       solution:
-        "Every company gets a dedicated, isolated database — your data never mixes with other tenants. Enterprise-grade encryption included.",
+        "Use isolated data architecture, role-based access, and audit-ready records to strengthen governance and compliance.",
     },
   ] satisfies Problem[],
 } as const

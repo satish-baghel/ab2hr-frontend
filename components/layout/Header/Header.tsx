@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Menu } from "lucide-react"
+import { Menu, Zap } from "lucide-react"
 
 import {
   Button,
@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/custom"
-import { ThemeToggle } from "@/components/shared"
+import { ThemeToggle, Logo } from "@/components/shared"
 import { headerNavItems, siteConfig } from "@/data"
 
 export const Header = () => {
@@ -24,9 +24,12 @@ export const Header = () => {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 md:px-6">
         <Link
           href="/"
-          className="text-lg font-semibold tracking-tight text-foreground transition-opacity hover:opacity-80"
+          // className="transition-opacity hover:opacity-80"
+           className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground"
+          aria-label={siteConfig.name}
         >
-          {siteConfig.name}
+          {/* <Logo className="h-10 w-auto" /> */}
+          <Zap className="h-6 w-6 fill-current" />
         </Link>
 
         {/* Desktop nav */}

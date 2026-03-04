@@ -1,3 +1,5 @@
 export type { Feature } from "./feature"
 export type { Problem } from "./problem"
 export type { Stat } from "./stat"
+export type { RoadmapStep } from "./roadmap-step"
+export type { Plan, PlanPrice, BillingInterval } from "./plan"

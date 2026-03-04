@@ -13,7 +13,7 @@ export const CTASection = () => {
     <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <MotionCard
-          className="relative gap-0 overflow-hidden border-0 bg-gradient-to-br from-primary via-primary/95 to-primary/85 py-0 text-primary-foreground shadow-xl"
+          className="relative gap-0 overflow-hidden border-0 bg-gradient-to-br from-primary via-primary to-[#2E1065] py-0 text-primary-foreground shadow-2xl"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -21,8 +21,8 @@ export const CTASection = () => {
         >
           {/* Decorative blurs */}
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -top-16 -left-16 h-[300px] w-[300px] rounded-full bg-secondary/10 blur-3xl" />
-            <div className="absolute -right-16 -bottom-16 h-[250px] w-[250px] rounded-full bg-primary-foreground/10 blur-3xl" />
+            <div className="absolute -top-16 -left-16 h-[300px] w-[300px] rounded-full bg-secondary/[0.08] blur-3xl" />
+            <div className="absolute -right-16 -bottom-16 h-[250px] w-[250px] rounded-full bg-primary-foreground/[0.06] blur-3xl" />
           </div>
 
           <CardContent className="relative px-6 py-16 text-center md:px-16 md:py-20">

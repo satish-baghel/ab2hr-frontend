@@ -3,7 +3,10 @@ import {
   HeroSection,
   FeaturesSection,
   ProblemsSection,
+  RoadmapSection,
+  PlansSection,
   StatsSection,
+  ComparisonSection,
   CTASection,
 } from "@/components/sections"
 import { siteConfig } from "@/data"
@@ -34,6 +37,9 @@ export default function Home() {
         <HeroSection />
         <FeaturesSection />
         <ProblemsSection />
+        {/* <RoadmapSection /> */}
+        <ComparisonSection />
+        <PlansSection />
         <StatsSection />
         <CTASection />
         <Footer />

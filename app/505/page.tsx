@@ -6,12 +6,12 @@ import { ErrorIllustration } from "@/components/shared"
 import { siteConfig } from "@/data"
 
 export const metadata = {
-  title: "Page Not Found",
-  description: `The page you're looking for doesn't exist on ${siteConfig.name}.`,
+  title: "Server Error",
+  description: `A server error occurred while loading this page on ${siteConfig.name}.`,
   robots: { index: false, follow: false },
 }
 
-export default function NotFound() {
+export default function Error505Page() {
   return (
     <>
       <Header />
@@ -19,25 +19,28 @@ export default function NotFound() {
         <main className="flex-1 px-4 py-12 md:px-6">
           <section className="mx-auto grid w-full max-w-6xl items-center gap-10 py-8 md:grid-cols-2 md:gap-16 md:py-16">
             <div className="order-2 space-y-5 text-center md:order-1 md:text-left">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-                Error 404
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-destructive">
+                Error 505
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-                Page not found
+                Server is unavailable
               </h1>
               <p className="max-w-xl text-base text-muted-foreground">
-                Sorry, we couldn&apos;t find the page you&apos;re looking for.
-                It may have been moved, deleted, or never existed.
+                Something unexpected happened while processing this request.
+                Please try again in a few moments.
               </p>
               <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row md:items-start">
                 <Button asChild size="lg">
                   <Link href="/">Back to Home</Link>
                 </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link href="/505">Refresh this page</Link>
+                </Button>
               </div>
             </div>
 
             <div className="order-1 mx-auto w-full max-w-md md:order-2 md:max-w-none">
-              <ErrorIllustration code="404" />
+              <ErrorIllustration code="505" />
             </div>
           </section>
         </main>
