@@ -29,8 +29,8 @@ export const ComparisonSection = () => {
       {/* Decorative background elements */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-primary/20 opacity-20 blur-[100px]"></div>
-      
-      <div className="relative mx-auto max-w-5xl px-4 md:px-6">
+
+      <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <motion.div
           className="mx-auto mb-20 max-w-2xl text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export const ComparisonSection = () => {
           >
             {comparisonData.badge}
           </Badge>
-          <h2 className="mb-6 text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl">
+          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
             {comparisonData.heading}
           </h2>
           <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
@@ -68,13 +68,13 @@ export const ComparisonSection = () => {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/20">
                 <Zap className="h-6 w-6 fill-current" />
               </div>
-              <span className="text-lg font-bold text-primary">Abtwo HR</span>
+              <span className="text-lg font-bold text-primary">Ab2HR</span>
             </div>
             <div className="flex flex-col items-center justify-center text-muted-foreground/80">
               <span className="text-lg font-medium">Others</span>
             </div>
           </div>
-          
+
           <div className="flex flex-col">
             {comparisonData.categories.map((category, categoryIdx) => (
               <div key={category.title} className="flex flex-col">
@@ -84,7 +84,7 @@ export const ComparisonSection = () => {
                     {category.title}
                   </h3>
                 </div>
-                
+
                 {/* Features within Category */}
                 <div className="divide-y divide-border/50">
                   {category.features.map((feature, featureIdx) => (
@@ -95,7 +95,7 @@ export const ComparisonSection = () => {
                     >
                       {/* Highlight background trail for Abtwo column */}
                       <div className="absolute inset-y-0 left-1/2 w-1/4 -translate-y-[1px] bg-primary/[0.02] transition-colors group-hover:bg-primary/[0.04]"></div>
-                      
+
                       {/* Feature Name & Description */}
                       <div className="col-span-2 pr-4 lg:pr-8">
                         <div className="text-sm font-semibold text-foreground lg:text-base">
@@ -105,7 +105,7 @@ export const ComparisonSection = () => {
                           {feature.description}
                         </div>
                       </div>
-                      
+
                       {/* Abtwo Column */}
                       <div className="relative z-10 flex items-center justify-center">
                         {feature.abtwo ? (
@@ -116,7 +116,7 @@ export const ComparisonSection = () => {
                           <Minus className="h-5 w-5 text-muted-foreground/30" />
                         )}
                       </div>
-                      
+
                       {/* Others Column */}
                       <div className="relative z-10 flex items-center justify-center text-center">
                         {typeof feature.others === "boolean" ? (
@@ -137,12 +137,12 @@ export const ComparisonSection = () => {
               </div>
             ))}
           </div>
-          
+
           {/* Bottom highlight cap for Abtwo HR column */}
           <div className="grid grid-cols-4 p-4 md:p-6">
             <div className="col-span-2"></div>
             <div className="relative h-2">
-               <div className="absolute -inset-x-2 -bottom-6 -top-4 -z-10 rounded-b-2xl bg-primary/[0.03] ring-1 ring-inset ring-primary/10"></div>
+              <div className="absolute -inset-x-2 -bottom-6 -top-4 -z-10 rounded-b-2xl bg-primary/[0.03] ring-1 ring-inset ring-primary/10"></div>
             </div>
             <div></div>
           </div>

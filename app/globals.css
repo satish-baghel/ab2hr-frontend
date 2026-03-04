@@ -64,15 +64,15 @@
 :root {
   --radius: 0.625rem;
   /* violet-tinted off-white — branded, not generic */
-  --background: #F8F7FC;
+  --background: #e1dfea;
   /* indigo-950 — rich near-black with violet warmth */
   --foreground: #1E1B4B;
   /* white — pops against tinted bg */
-  --card: #FFFFFF;
+  --card: #e1dfea;
   /* indigo-950 */
   --card-foreground: #1E1B4B;
   /* white */
-  --popover: #FFFFFF;
+  --popover: #e1dfea;
   /* indigo-950 */
   --popover-foreground: #1E1B4B;
   /* violet-900 — deep royal purple */

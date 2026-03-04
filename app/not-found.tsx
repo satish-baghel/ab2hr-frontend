@@ -18,7 +18,11 @@ export default function NotFound() {
       <div className="flex min-h-screen flex-col bg-background pt-16">
         <main className="flex-1 px-4 py-12 md:px-6">
           <section className="mx-auto grid w-full max-w-6xl items-center gap-10 py-8 md:grid-cols-2 md:gap-16 md:py-16">
-            <div className="order-2 space-y-5 text-center md:order-1 md:text-left">
+            <div className="mx-auto flex w-full max-w-md justify-center md:max-w-none md:justify-start">
+              <ErrorIllustration code="404" />
+            </div>
+
+            <div className="space-y-5 flex flex-col items-center md:items-start text-center md:text-left">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
                 Error 404
               </p>
@@ -30,14 +34,10 @@ export default function NotFound() {
                 It may have been moved, deleted, or never existed.
               </p>
               <div className="flex flex-col items-center gap-3 pt-2 sm:flex-row md:items-start">
-                <Button asChild size="lg">
+                <Button asChild size="lg">  
                   <Link href="/">Back to Home</Link>
                 </Button>
               </div>
-            </div>
-
-            <div className="order-1 mx-auto w-full max-w-md md:order-2 md:max-w-none">
-              <ErrorIllustration code="404" />
             </div>
           </section>
         </main>
