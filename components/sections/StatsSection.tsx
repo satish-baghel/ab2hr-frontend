@@ -60,7 +60,7 @@ export const StatsSection = () => {
               variants={statVariants}
               className="text-center"
             >
-              <p className="mb-1 text-4xl font-extrabold tracking-tight text-secondary md:text-5xl">
+              <p className="mb-1 text-4xl font-extrabold tracking-tight text-secondary/80 md:text-5xl">
                 {stat.value}
               </p>
               <p className="text-sm font-medium text-primary-foreground/70">
