@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "AB2HR",
+  name: "QCUBE",
   description:
-    "Streamline hiring, payroll, attendance, and employee management — all from one intuitive dashboard. AB2HR helps teams focus on people, not paperwork.",
-  url: "https://abtwohr.com",
-  ogImage: "https://abtwohr.com/og.png",
+    "Streamline hiring, payroll, attendance, and employee management — all from one intuitive dashboard. QCUBE helps teams focus on people, not paperwork.",
+  url: "https://qcube.co.in",
+  ogImage: "https://qcube.co.in/og.png",
   locale: "en_US",
-  creator: "AB2HR",
+  creator: "QCUBE",
   keywords: [
     "HR management",
     "payroll software",

@@ -163,7 +163,7 @@ export const MissionSection = () => {
                                 },
                                 {
                                     label: "2024",
-                                    text: "Crossed 200+ companies managing their HR on AB2HR.",
+                                    text: "Crossed 200+ companies managing their HR on QCUBE.",
                                 },
                             ].map((milestone) => (
                                 <div

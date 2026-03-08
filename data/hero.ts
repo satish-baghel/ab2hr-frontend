@@ -14,6 +14,6 @@ export const heroData = {
   deletingSpeedMs: 35,
   pauseAfterTypeMs: 900,
   description:
-    "From hiring and onboarding to payroll, attendance, performance, and compliance, AB2HR gives HR, managers, and employees a single source of truth.",
+    "From hiring and onboarding to payroll, attendance, performance, and compliance, QCUBE gives HR, managers, and employees a single source of truth.",
   cta: "Book a Personalized Demo",
 } as const

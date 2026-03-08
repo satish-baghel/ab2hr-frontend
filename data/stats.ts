@@ -3,7 +3,7 @@ import type { Stat } from "@/types"
 export const statsData = {
   heading: "Built for Reliability, Security, and Scale",
   description:
-    "AB2HR is designed to support fast-growing teams with dependable performance, secure architecture, and predictable operations.",
+    "QCUBE is designed to support fast-growing teams with dependable performance, secure architecture, and predictable operations.",
   stats: [
     { value: "99.9%", label: "Platform Uptime SLA" },
     { value: "70%", label: "Reduction in Manual HR Tasks" },
