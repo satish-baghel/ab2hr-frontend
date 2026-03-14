@@ -1,12 +1,12 @@
 "use client"
 
 import React from "react"
-import { motion } from "framer-motion"
+import { motion } from 'motion/react'
 import { Check, Info, X } from "lucide-react"
 
 import { Button } from "@/components/custom"
 import { pricingComparisonData, plansData } from "@/data"
-import { cn } from "@/lib/utils"
+
 
 interface Feature {
   readonly name: string
@@ -67,7 +67,7 @@ export const PricingTable = () => {
                   </th>
                 </tr>
                 {/* Feature Rows */}
-                {category.features.map((feature: Feature, fIdx: number) => (
+                {/* {category.features.map((feature: Feature, fIdx: number) => (
                   <motion.tr
                     key={feature.name}
                     initial={{ opacity: 0, y: 10 }}
@@ -102,7 +102,7 @@ export const PricingTable = () => {
 
                     ))}
                   </motion.tr>
-                ))}
+                ))} */}
               </React.Fragment>
             ))}
           </tbody>

@@ -4,7 +4,7 @@ export const roadmapData = {
   badge: "Implementation Journey",
   heading: "A Practical Rollout Path for Modern HR Teams",
   description:
-    "Adopt QCUBE in progressive stages, from quick setup to advanced insights, with measurable outcomes at each phase.",
+    "Adopt HORIZEN in progressive stages, from quick setup to advanced insights, with measurable outcomes at each phase.",
   steps: [
     {
       phase: "Step 1",

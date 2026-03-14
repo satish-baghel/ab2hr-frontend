@@ -68,7 +68,7 @@ export const ComparisonSection = () => {
               <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground shadow-lg shadow-primary/20">
                 <Zap className="h-6 w-6 fill-current" />
               </div>
-              <span className="text-lg font-bold text-primary">QCUBE</span>
+              <span className="text-lg font-bold text-primary">HORIZEN</span>
             </div>
             <div className="flex flex-col items-center justify-center text-muted-foreground/80">
               <span className="text-lg font-medium">Others</span>

@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "QCUBE",
+  name: "HORIZEN",
   description:
-    "Streamline hiring, payroll, attendance, and employee management — all from one intuitive dashboard. QCUBE helps teams focus on people, not paperwork.",
-  url: "https://qcube.co.in",
-  ogImage: "https://qcube.co.in/og.png",
+    "Streamline hiring, payroll, attendance, and employee management — all from one intuitive dashboard. HORIZEN helps teams focus on people, not paperwork.",
+  url: "https://HORIZEN.co.in",
+  ogImage: "https://HORIZEN.co.in/og.png",
   locale: "en_US",
-  creator: "QCUBE",
+  creator: "HORIZEN",
   keywords: [
     "HR management",
     "payroll software",

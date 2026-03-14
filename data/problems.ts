@@ -4,7 +4,7 @@ export const problemsData = {
   badge: "Common HR Bottlenecks",
   heading: "Replace Fragmented HR Workflows with a Unified System",
   description:
-    "As teams grow, spreadsheets and disconnected tools create delays, errors, and compliance risk. QCUBE brings every process into one connected platform.",
+    "As teams grow, spreadsheets and disconnected tools create delays, errors, and compliance risk. HORIZEN brings every process into one connected platform.",
   problems: [
     {
       icon: "SheetIcon",

@@ -111,7 +111,7 @@ export const ProblemsSection = () => {
                   <div className="flex items-start gap-4 pl-14 md:pl-0">
                     <div>
                       <Badge className="mb-1.5 text-[11px] uppercase tracking-wider">
-                        QCUBE Solution
+                        HORIZEN Solution
                       </Badge>
                       <p className="text-sm leading-relaxed text-foreground">
                         {item.solution}

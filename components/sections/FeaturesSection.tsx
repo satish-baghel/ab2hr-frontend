@@ -82,11 +82,10 @@ export const FeaturesSection = () => {
               <MotionCard
                 key={feature.title}
                 variants={cardVariants}
-                className={`group relative gap-0 py-0 ${
-                  feature.highlighted
-                    ? "border-primary/30 ring-2 ring-primary/10"
-                    : ""
-                }`}
+                className={`group relative gap-0 py-0  dark:hover:border-white/30 dark:hover:ring-2 dark:hover:ring-white/10 hover:border-primary/30 hover:ring-2 hover:ring-primary/10 ${feature.highlighted
+                  ? "border-primary/30 ring-2 ring-primary/10 dark:border-white/30 dark:ring-2 dark:ring-white/10 "
+                  : ""
+                  }`}
               >
                 {feature.highlighted && (
                   <Badge className="absolute -top-3 right-4 text-[11px] uppercase tracking-wide">
@@ -95,11 +94,10 @@ export const FeaturesSection = () => {
                 )}
                 <CardContent className="p-6">
                   <div
-                    className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg ${
-                      feature.highlighted
-                        ? "bg-secondary text-secondary-foreground"
-                        : "bg-accent text-primary"
-                    }`}
+                    className={`mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg ${feature.highlighted
+                      ? "bg-secondary text-secondary-foreground"
+                      : "bg-accent text-primary"
+                      }`}
                   >
                     {Icon && <Icon className="h-5 w-5" />}
                   </div>

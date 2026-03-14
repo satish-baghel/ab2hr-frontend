@@ -1,9 +1,9 @@
 export const aboutData = {
   hero: {
-    badge: "About QCUBE",
+    badge: "About HORIZEN",
     heading: "HR Software Built for People, Not Paperwork",
     description:
-      "QCUBE was founded on a simple belief: HR teams deserve tools that reduce friction, not create it. We are building an all-in-one platform that brings payroll, attendance, hiring, and employee experience under one roof.",
+      "HORIZEN was founded on a simple belief: HR teams deserve tools that reduce friction, not create it. We are building an all-in-one platform that brings payroll, attendance, hiring, and employee experience under one roof.",
   },
 
   mission: {
@@ -43,9 +43,9 @@ export const aboutData = {
     badge: "Our Story",
     heading: "From Frustration to a Platform",
     paragraphs: [
-      "QCUBE was born out of a common frustration. Our founders saw HR teams drowning in spreadsheets, chasing approvals over WhatsApp, and manually reconciling payroll every month. The tools they had were either too expensive, too complex, or too generic.",
+      "HORIZEN was born out of a common frustration. Our founders saw HR teams drowning in spreadsheets, chasing approvals over WhatsApp, and manually reconciling payroll every month. The tools they had were either too expensive, too complex, or too generic.",
       "We set out to build something different — a platform designed specifically for growing businesses in India, with an opinionated approach to simplicity, compliance, and automation. We started with payroll and quickly realized HR needed a fully integrated solution.",
-      "Today, QCUBE serves teams across industries, helping them manage the entire employee lifecycle from hiring to offboarding. We are a small, focused team with a big ambition: to become the HR backbone for every growing business.",
+      "Today, HORIZEN serves teams across industries, helping them manage the entire employee lifecycle from hiring to offboarding. We are a small, focused team with a big ambition: to become the HR backbone for every growing business.",
     ],
   },
 
@@ -77,7 +77,7 @@ export const aboutData = {
       {
         name: "Rohan Sharma",
         role: "Head of Product",
-        bio: "Product manager who spent years embedded with HR teams in fast-growing startups before joining QCUBE.",
+        bio: "Product manager who spent years embedded with HR teams in fast-growing startups before joining HORIZEN.",
         initials: "RS",
       },
       {
@@ -92,7 +92,7 @@ export const aboutData = {
   cta: {
     heading: "Ready to Transform Your HR Operations?",
     description:
-      "Join growing teams who have simplified their HR workflows with QCUBE. Start your free trial today — no credit card required.",
+      "Join growing teams who have simplified their HR workflows with HORIZEN. Start your free trial today — no credit card required.",
     primaryCta: "Start Free Trial",
     secondaryCta: "Request a Demo",
   },

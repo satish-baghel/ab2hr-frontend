@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-import { Button } from "@/components/custom"
+import { ContactFormSection } from "@/components/sections"
 import { siteConfig } from "@/data"
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function ContactUsPage() {
                         <div>
                             <h2 className="text-2xl font-semibold mb-4 text-foreground">Get in Touch</h2>
                             <p className="text-muted-foreground leading-relaxed">
-                                Whether you're looking for a demo, need customer support, or just want to learn more about our HR platform, we'd love to hear from you. Fill out the form and our team will get back to you within 24 hours.
+                                Whether you&apos;re looking for a demo, need customer support, or just want to learn more about our HR platform, we&apos;d love to hear from you. Fill out the form and our team will get back to you within 24 hours.
                             </p>
                         </div>
 
@@ -74,52 +74,7 @@ export default function ContactUsPage() {
                         </div>
                     </div>
 
-                    <div className="bg-card shadow-sm border rounded-xl p-6 lg:p-8">
-                        <form className="space-y-6">
-                            <div className="grid sm:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <label htmlFor="first-name" className="text-sm font-medium text-foreground">First Name</label>
-                                    <input
-                                        id="first-name"
-                                        type="text"
-                                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                                        placeholder="John"
-                                    />
-                                </div>
-                                <div className="space-y-2">
-                                    <label htmlFor="last-name" className="text-sm font-medium text-foreground">Last Name</label>
-                                    <input
-                                        id="last-name"
-                                        type="text"
-                                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                                        placeholder="Doe"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-sm font-medium text-foreground">Email Address</label>
-                                <input
-                                    id="email"
-                                    type="email"
-                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                                    placeholder="john@company.com"
-                                />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="message" className="text-sm font-medium text-foreground">Message</label>
-                                <textarea
-                                    id="message"
-                                    rows={5}
-                                    className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 resize-y"
-                                    placeholder="How can we help you?"
-                                ></textarea>
-                            </div>
-
-                            <Button className="w-full mt-2" type="button" size="lg">Send Message</Button>
-                        </form>
-                    </div>
+                    <ContactFormSection />
                 </div>
             </div>
         </main>

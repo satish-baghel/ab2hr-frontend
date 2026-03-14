@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight , ArrowUpRight} from "lucide-react"
 
 import { Badge, Button } from "@/components/custom"
 import { HeroIllustration } from "@/components/shared"
@@ -124,7 +124,7 @@ export const HeroSection = () => {
           <motion.div variants={slideInLeft}>
             <Button size="lg" className="group gap-2 text-base">
               {heroData.cta}
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:scale-120" />
             </Button>
           </motion.div>
         </motion.div>
