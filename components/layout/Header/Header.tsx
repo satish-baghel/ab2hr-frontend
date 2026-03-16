@@ -13,7 +13,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/custom"
-import { ThemeToggle, Logo } from "@/components/shared"
+import { ThemeToggle } from "@/components/shared"
 import { headerNavItems, siteConfig } from "@/data"
 
 export const Header = () => {
@@ -51,11 +51,12 @@ export const Header = () => {
           <Button
             variant="ghost"
             className="text-sm text-muted-foreground hover:text-foreground"
+            asChild
           >
-            Sign in
+            <Link href="/login">Login</Link>
           </Button>
-          <Button className="rounded-full px-5 text-sm font-medium">
-            Get Started
+          <Button className="px-5 text-sm font-medium" asChild>
+            <Link href="/register">Register</Link>
           </Button>
         </div>
 
@@ -87,11 +88,11 @@ export const Header = () => {
               <div className="mt-auto flex flex-col gap-3 border-t px-4 pt-4 pb-6">
                 <SheetClose asChild>
                   <Button variant="outline" className="w-full">
-                    Sign in
+                    Login
                   </Button>
                 </SheetClose>
                 <SheetClose asChild>
-                  <Button className="w-full">Get Started</Button>
+                  <Button className="w-full">Register</Button>
                 </SheetClose>
               </div>
             </SheetContent>
